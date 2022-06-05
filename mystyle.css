@@ -1,0 +1,74 @@
+:root{
+    --star-color: rgba(255, 255, 255, 0.2);
+    --text-color:white;
+    --orange:  hsl(25, 97%, 53%);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 1px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: rgba(53, 42, 23, 0.61);
+
+}
+
+p{
+    opacity: 0.7;
+}
+main{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+}
+div{
+    display: flex;
+    justify-content: space-between;
+}
+svg:not(#thanks), div p{
+    /* border: red solid 1px; */
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--star-color);
+}
+div p:hover, div p:active{
+    background-color: var(--orange);
+    cursor: pointer;
+}
+#thanks, #a{
+    margin: auto;
+}
+a{
+    /* border: 2px solid blue; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--orange);
+}
+a:hover, a:active{
+    background-color: var(--text-color);
+    color: var(--orange);
+}
+#a{
+    color: var(--orange);
+    background-color: var(--star-color);
+    padding: 5px;
+    border-radius: 15px;
+    width: 70%;
+    margin-top: 15px;
+}
+.reply{
+    text-align: center;
+}
+@media (min-width:769px) and (max-width:1800px){
+    main{
+        width: 20%;
+    }
+}
