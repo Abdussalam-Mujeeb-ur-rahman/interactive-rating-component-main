@@ -1,11 +1,11 @@
-:root{
-    --star-color: rgba(255, 255, 255, 0.2);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Outfit:wght@100;400&family=Overpass:wght@200&display=swap');:root{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Outfit:wght@100;400&family=Overpass:wght@600&display=swap');    --star-color: rgba(255, 255, 255, 0.2);
     --text-color:white;
     --orange:  hsl(25, 97%, 53%);
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Overpass', sans-serif;
     word-spacing: 1px;
     color: var(--text-color);
     display: flex;
@@ -13,6 +13,10 @@ body{
     padding-top: 100px;
     background-color: rgba(53, 42, 23, 0.61);
 
+}
+h1{
+    font-weight: 600px;
+    font-family: 'Overpass', sans-serif;
 }
 
 p{
